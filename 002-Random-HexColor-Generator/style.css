@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container {
+  padding: 10px;
+  text-align: center;
+}
+h2 {
+  font-size: 3rem;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 2rem;
+}
+#hex{
+    color: aqua;
+}
+button {
+  padding: 1rem 2rem;
+  outline: none;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 2px solid #222;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+}
+button:hover {
+  background-color: #222;
+  color: #fff;
+}
