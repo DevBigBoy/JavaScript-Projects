@@ -15,7 +15,6 @@ body {
 }
 main {
   background-color: #882873;
-  max-width: 110rem;
   height: 100vh;
   display: grid;
   place-items: center;
