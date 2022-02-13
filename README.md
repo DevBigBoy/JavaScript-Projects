@@ -9,3 +9,4 @@
 | 005 | Palindrome Checker Js     | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-Exercises/005-Palindrome-Checker)        |
 | 006 | Vowel Counter             | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-Exercises/006-Vowel-Counter)             |
 | 007 | ClickToCopy               | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-Exercises/007-ClickToCopy)               |
+| 008 | InputFieldCharacterCount  | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-Exercises/008-InputField-CharacterCount) |

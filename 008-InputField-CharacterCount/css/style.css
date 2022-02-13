@@ -1,0 +1,115 @@
+/* 
+================
+* fonts 
+================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+/*
+================
+* global rules 
+================
+*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #30c8c9;
+}
+::selection {
+  background-color: #30c8c9;
+  color: #fff;
+}
+.container {
+  width: 60%;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  font-family: inherit;
+}
+.info {
+  height: 40%;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.count {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #dc143c;
+}
+.data {
+  height: 60%;
+  width: 100%;
+  position: relative;
+}
+.testarea {
+  border: 2px solid #30c8c9;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 16px;
+  background-color: #bffde7;
+  width: 100%;
+  height: 100%;
+}
+.delete {
+  color: #054861;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.floating-text {
+  position: fixed;
+  bottom: 0;
+  background-color: #054861;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  padding: 7px 15px;
+}
+.floating-text a {
+  text-decoration: none;
+  color: #ff7500;
+  text-align: center;
+  z-index: 999;
+}
+@media (max-width: 796px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .data {
+    height: 50%;
+  }
+}
