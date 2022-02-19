@@ -16,7 +16,4 @@ function countVowel() {
   }
   result.innerHTML = `${word.value.toUpperCase()} has ${vowelCount} vowels`;
 }
-setTimeout(() => {
-  result.innerHTML = "";
-  word.value = "";
-}, 10000);
+

@@ -10,3 +10,5 @@
 | 006 | Vowel Counter             | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-Exercises/006-Vowel-Counter)             |
 | 007 | ClickToCopy               | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-Exercises/007-ClickToCopy)               |
 | 008 | InputFieldCharacterCount  | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-Exercises/008-InputField-CharacterCount) |
+| 009 | Countdown Time            | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-Exercises/009-Countdown-Time)            |
+| 010 | Random Meal Generator     | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-Exercises/010-Random-Meal-Generator)     |
