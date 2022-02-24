@@ -27,30 +27,45 @@
   outline: none;
   border: none;
 }
-::selection {
-  background-color: var(--clr-mian);
-  color: var(--clr-light);
-}
-body {
-  width: 100%;
+main {
   min-height: 100vh;
   font-family: var(--font-family);
-  background: url("../snow.jpg") no-repeat center center / cover;
-  /* display: flex; */
-  /* align-items: center; */
-  /* flex-direction: column; */
+  background: url("../snow.jpg") no-repeat bottom / cover;
+  flex-direction: column;
+}
+h1 {
+  font-size: 4rem;
+  margin-top: -10rem;
+  margin-bottom: 80px;
+  font-weight: normal;
 }
 /* 
 ? ================
-?   APP 
+?   components 
 ? ================
 */
-
+.place-item-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-text {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
 /* 
 ? ================
-?   Media Query 
+?   app 
 ? ================
 */
-@media (max-width: 796px) {
- 
+.countdown-container {
+  display: flex;
+}
+.countdown-container > div {
+  text-align: center;
+}
+.countdown-container > div span {
+  font-size: 1.3rem;
 }
