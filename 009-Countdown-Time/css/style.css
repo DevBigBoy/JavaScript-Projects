@@ -30,12 +30,12 @@
 main {
   min-height: 100vh;
   font-family: var(--font-family);
-  background: url("../snow.jpg") no-repeat bottom / cover;
+  background: url("../bk.jpg") no-repeat center / cover;
   flex-direction: column;
 }
 h1 {
   font-size: 4rem;
-  margin-top: -10rem;
+  margin-top: 10rem;
   margin-bottom: 80px;
   font-weight: normal;
 }
@@ -47,7 +47,6 @@ h1 {
 .place-item-center {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .big-text {
   font-weight: bold;
