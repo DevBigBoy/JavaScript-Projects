@@ -68,3 +68,28 @@ h1 {
 .countdown-container > div span {
   font-size: 1.3rem;
 }
+/* 
+? ================
+?   Media  
+? ================
+*/
+@media (max-width: 767px) {
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .countdown-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .big-text {
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .countdown-container > div span {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+}
