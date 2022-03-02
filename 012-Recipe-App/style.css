@@ -1,0 +1,185 @@
+/* 
+? ========================
+?          fonts 
+? ========================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/* 
+? ========================
+?    custome Properties 
+? ========================
+*/
+:root {
+  --clr-main: #abf5d7;
+  --clr-main-alt: #047857;
+  --clr-dark: #111;
+  --clr-bg: #7ee787;
+  --clr-accent: #eee;
+  --clr-light: #fff;
+  --font-family: "Poppins", sans-serif;
+}
+/* 
+? ========================
+?          Reset
+? ========================
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--clr-main);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+img {
+  max-width: 100%;
+}
+input,
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+/* 
+? ========================
+?     Utility Classes
+? ========================
+*/
+.flex {
+  display: flex;
+  gap: var(--gap, 10px);
+}
+.place-item-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+.section-p {
+  padding: 1rem;
+}
+/* 
+? ========================
+?        Recipe App
+? ========================
+*/
+.mobile-container {
+  width: 400px;
+  background-color: var(--clr-light);
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.header > input {
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  background-color: var(--clr-accent);
+}
+.header > button {
+  background-color: #fff;
+  color: #aaa;
+  font-size: 1.5rem;
+}
+.favorite-container {
+  background-color: var(--clr-bg);
+  border-top: 2px solid rgb(170, 170, 170);
+  border-bottom: 2px solid rgb(170, 170, 170);
+}
+.fav-meals {
+  flex-wrap: wrap;
+}
+.fav-meals li {
+  width: 75px;
+  margin: 5px;
+}
+.fav-meals li img {
+  border: 2px solid var(--clr-light);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+}
+.meal {
+  border-radius: 10px;
+  box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%),
+    0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+  margin: 1.5rem;
+  overflow: hidden;
+}
+.meal-header {
+  position: relative;
+}
+.meal-header .random {
+  position: absolute;
+  top: 20px;
+  color: #333;
+  font-size: 1.2rem;
+  background-color: var(--clr-light);
+  padding: 4px;
+  border-radius: 0 3px 3px 0;
+}
+.meal-header img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+.meal-body {
+  align-items: center;
+  justify-content: space-between;
+}
+.meal-body h4 {
+  margin: 0;
+}
+.meal-body .fav-btn {
+  background-color: #fff;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #aaa;
+}
+.meal-body .fav-btn.active {
+  color: var(--clr-main-alt);
+}
+
+/* 
+? ========================
+?        Label
+? ========================
+*/
+@media (max-width: 600px) {
+  .mobile-container {
+    width: 100%;
+    height: 100vh;
+    border: 0;
+    border-radius: initial;
+  }
+  .header > input,
+  button {
+    flex: 1;
+  }
+  .header > input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    flex-basis: 60%;
+    background-color: var(--clr-accent);
+  }
+}
