@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Counter App</title>
-    <!-- css style -->
-    <link rel="stylesheet" href="style.css" />
+    <!--* css style -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <main>
-      <section class="container">
-        <div class="counter-info">
-          <h1>Counter App</h1>
-          <span class="count" id="count">0</span>
-        </div>
-        <div class="counter-button">
-          <button class="subtract">subtract</button>
-          <button class="reset">reset</button>
-          <button class="add">Add</button>
+      <section class="container text-center">
+        <h1>Counter</h1>
+        <span class="value text-bold" id="value">0</span>
+        <div class="button-container">
+          <button class="btn decrease">decrease</button>
+          <button class="btn reset">reset</button>
+          <button class="btn increase">increase</button>
         </div>
       </section>
+      <div class="challenge-label">
+        Part of
+        <a
+          href="https://devmohamedelshazly.github.io/100-JavaScript-Exercises/"
+          target="_blank"
+          class="text-bold"
+          >#100Days100Projects</a
+        >
+      </div>
     </main>
-    <!-- JavaScript -->
-    <script src="app.js"></script>
+    <!--! JavaScript -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
