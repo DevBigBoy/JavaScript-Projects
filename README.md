@@ -19,3 +19,6 @@
 | 015 | Movies App                | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/015-Movies-App)                |
 | 016 | GitHub Profiles           | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/016-GitHub-Profiles)           |
 | 017 | GitHub Show               | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/017-Slider-Show)               |
+| 018 | GitHub Show               | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/018-Calculator)                |
+| 019 | GitHub Show               | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/019-Digital-Clock)             |
+| 020 | GitHub Show               | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/020-Scroll-To-Top)             |
