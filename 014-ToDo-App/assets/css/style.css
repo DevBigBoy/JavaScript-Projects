@@ -1,0 +1,185 @@
+/* 
+? ====================
+?       Fonts
+? ====================
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+/* 
+? ====================
+?  Custome Properties
+? ====================
+*/
+:root {
+  --clr-bk: #ffe9c3;
+  --clr-main: #f78125;
+  --clr-black: #222;
+  --clr-white: #fff;
+  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: "Roboto", sans-serif;
+}
+/* 
+? ====================
+?       Reset
+? ====================
+*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: var(--ff-secondary);
+  line-height: 1.5;
+  background-image: linear-gradient(120deg, #f6d365, #fda085);
+  color: var(--clr-dark);
+  font-size: 0.875rem;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1rem;
+}
+h4 {
+  font-size: 0.75rem;
+}
+@media (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/* 
+? ====================
+?   utility Classes
+? ====================
+*/
+
+/* 
+? ====================
+?        Header
+? ====================
+*/
+header,
+form {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form input,
+form button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border: none;
+  font-weight: inherit;
+  background-color: var(--clr-white);
+}
+form button {
+  color: #d88771;
+  background-color: var(--clr-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #d88771;
+  color: var(--clr-white);
+}
+/* 
+? ====================
+?   Todo Container
+? ====================
+*/
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+}
+.todo-list {
+  border: 2px solid;
+  min-width: 40%;
+}
+.todo {
+  border: 2px solid;
+  margin: 0.5rem;
+  background: var(--clr-white);
+  color: var(--clr-black);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.todo li {
+  flex: 1;
+}
+.trash-btn,
+.complete-btn {
+  background: #ff6f47;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.trash-btn:hover,
+.complete-btn:hover {
+  opacity: 0.8;
+}
+.complete-btn {
+  background: #49cc49;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+.fa-check,
+.fa-trash-can {
+  pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+  .todo-list {
+    min-width: 100%;
+  }
+}
