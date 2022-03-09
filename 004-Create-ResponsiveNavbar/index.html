@@ -4,14 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Model</title>
-    <!-- Css File -->
-    <link rel="stylesheet" href="style.css" />
+    <title>Resonsive NavBar</title>
+    <!--* BoxIcon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--* Css File -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <!--? Str Nav -->
+    <nav class="nav" id="nav">
+      <div class="nav__menu container" id="nav-menu">
+        <div class="nav__shape"></div>
 
-   
-    <!-- js File -->
-    <script src="main.js"></script>
+        <div class="nav__close" id="nav-close">
+          <i class="bx bx-x"></i>
+        </div>
+
+        <div class="nav__data">
+          <div class="nav__mask">
+            <img src="assets/img/perfil.png" alt="" class="nav__img" />
+          </div>
+
+          <span class="nav__greeting">Hi, I'm</span>
+          <h1 class="nav__name">
+            Shezo <br />
+            Vegas
+          </h1>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="bx bx-home"></i> Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="bx bx-user"></i> About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="bx bx-briefcase-alt-2"></i> Portfolio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="bx bx-bookmark"></i> Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="bx bx-message-square-detail"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--? End Nav -->
+
+    <!--? Str Main -->
+    <main class="main" id="main">
+      <!--? Str Header -->
+      <header class="header" id="header">
+        <nav class="header__nav container">
+          <a href="#" class="header__logo">Shezo</a>
+
+          <div class="header__toggle" id="header-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </nav>
+      </header>
+      <!--? End Header -->
+
+      <!--? Str Home -->
+      <section class="section section__height container" id="home">
+        <h1>HOME</h1>
+      </section>
+      <!--? End Home -->
+
+      <!--? Str About -->
+      <section class="section section__height container" id="about">
+        <h1>ABOUT</h1>
+      </section>
+      <!--? End About -->
+
+      <!--? Str Portfolio -->
+      <section class="section section__height container" id="portfolio">
+        <h1>PORTFOLIO</h1>
+      </section>
+      <!--? End Portfolio -->
+
+      <!--? Str Skills -->
+      <section class="section section__height container" id="skills">
+        <h1>SKILLS</h1>
+      </section>
+      <!--? End Skills -->
+
+      <!--? Str Contact -->
+      <section class="section section__height container" id="contact">
+        <h1>CONTACT</h1>
+      </section>
+      <!--? End Contact -->
+    </main>
+    <!--? End Main -->
+
+    <!--! JavaScript -->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
