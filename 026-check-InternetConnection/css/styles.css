@@ -1,0 +1,104 @@
+/* 
+? ====================
+?       Fonts
+? ====================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* 
+? ====================
+?  Custome Properties
+? ====================
+*/
+:root {
+  --clr-green: #a7f3d0;
+  --clr-green-text: #065f46;
+  --clr-red: #ffbfc1;
+  --clr-red-text: #cc1016;
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 1.5rem;
+  --normal-font-size: 0.938rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --big-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+/* 
+? ====================
+?       Reset
+? ====================
+*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--clr-red);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  line-height: 1.5;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+/* 
+? ====================
+?        App
+? ====================
+*/
+.container {
+  color: var(--clr-red-text);
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+.title {
+  font-size: var(--big-font-size);
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+}
+.list {
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+.hide {
+  display: none;
+}
+.button {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  color: var(--clr-red-text);
+  font-weight: bold;
+  width: min-content;
+  transition: 0.3s;
+  border: 1px solid;
+}
+.button:hover {
+  background-color: var(--clr-red);
+}
+.challenge-label {
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: #46080a;
+  width: max-content;
+}
+.challenge-label a {
+  color: var(--clr-red-text);
+}

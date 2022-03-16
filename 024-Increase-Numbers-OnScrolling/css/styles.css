@@ -1,0 +1,127 @@
+/* 
+? ================
+?      Fonts
+? ================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* 
+? ===================
+?  Custome properties
+? ===================
+*/
+:root {
+  --clr-1: #5adaff;
+  --clr-2: #2cc8f7;
+  --clr-3: #0db7eb;
+  --clr-4: #009bcb;
+  --body-font: "Poppins", sans-serif;
+  --big-fonts-size: 1.5rem;
+  --normal-font-size: 0.938rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --big-fonts-size: 1.75rem;
+    --normal-font-size: 1rem;
+  }
+}
+/* 
+? ================
+?      Reset
+? ================
+*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* 
+? ================
+?      App    
+? ================
+*/
+.section {
+  min-height: 100vh;
+  padding: 80px 0;
+}
+section:nth-child(1) {
+  background-color: var(--clr-1);
+}
+section:nth-child(2) {
+  background-color: var(--clr-2);
+}
+section:nth-child(3) {
+  background-color: var(--clr-3);
+}
+section:nth-child(4) {
+  background-color: var(--clr-4);
+}
+.work .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.box {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #222;
+  border-radius: 50%;
+  color: #2222;
+  transition: 0.4s;
+}
+.icon i {
+  font-size: 3rem;
+  color: #222;
+  transition: 0.4s;
+}
+.icon:hover {
+  background-color: #222;
+}
+.icon:hover .bx {
+  color: #fff;
+  transform: scale(1.1);
+}
+.num {
+  margin: 1rem 0;
+  font-size: 4rem;
+}
