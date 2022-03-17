@@ -28,3 +28,4 @@
 | 024 | Reviews                                                                                                                     | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/021-Reviews)                   |
 | 025 | Reviews                                                                                                                     | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/021-Reviews)                   |
 | 026 | [Check Internet Connection](https://github.com/DevMohamedElshazly/100-JavaScript-APP/tree/main/005-Animated-Multistep-Form) | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/026-check-InternetConnection)  |
+| 027 | [Tabs](https://github.com/DevMohamedElshazly/100-JavaScript-APP/tree/main/027-Tabs) | [Live Preview](https://devmohamedelshazly.github.io/100-JavaScript-APP/027-Tabs)  |
