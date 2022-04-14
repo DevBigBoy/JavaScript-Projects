@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-family: sans-serif;
+}
+button {
+  font-family: inherit;
+}
+.mab {
+  position: relative;
+  background: #dddddd;
+  display: inline-flex;
+}
+.mab__button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  color: #333333;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  column-gap: 0.5rem;
+}
+.mab__button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mab__text {
+  font-family: "Readex pro", sans-serif;
+}
+.mab__list {
+  position: absolute;
+  top: 115%;
+  right: 0;
+  padding: 5px 0;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  display: none;
+  transition: 0.3s;
+}
+.mab__button--secondary {
+  width: 100%;
+  justify-content: flex-start;
+}
+.active {
+  display: initial;
+}

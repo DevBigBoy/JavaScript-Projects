@@ -1,0 +1,69 @@
+/* 
+? ====================
+?       Fonts
+? ====================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* 
+? ====================
+?  Custome Properties
+? ====================
+*/
+:root {
+  /** Font and typography */
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 1.5rem;
+  --normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 1.75rem;
+    --normal-font-size: 1rem;
+  }
+}
+/* 
+? ====================
+?        Reset
+? ====================
+*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+/* 
+? ====================
+?        App
+? ====================
+*/
+.tracker {
+  font-size: var(--normal-font-size);
+  border-collapse: collapse;
+  width: 700px;
+}
+.tracker,
+.tracker * {
+  font-family: var(--body-font);
+}
+
+.tracker th {
+  font-size: 1.15em;
+  text-align: left;
+  font-weight: normal;
+  color: #fff;
+  background-color: #009578;
+}
+.tracker th,
+.tracker td {
+  padding: 0.75rem;
+}
+.entries .tracker__row {
+  background-color: #eeeeee;
+}
