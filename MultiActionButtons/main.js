@@ -14,10 +14,9 @@ document.addEventListener("click", (e) => {
   const keepOpen =
     e.target.matches(".mab__list") ||
     e.target.matches(".mab__button--menu") ||
-    e.target.matches(".mab__button--icon");
+    e.target.matches(".mab__icon");
 
   if (keepOpen) return;
-
   document.querySelectorAll(".mab__list").forEach((list) => {
     list.classList.remove("active");
   });
