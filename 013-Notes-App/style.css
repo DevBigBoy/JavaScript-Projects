@@ -31,7 +31,7 @@ body {
   margin: 50px;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-template-columns: repeat(auto-fill, 265px);
 }
 
 .wrapper li {
