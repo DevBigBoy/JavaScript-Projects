@@ -25,15 +25,21 @@ const months = [
 //? to js Object else passing an empty array to notes
 
 const notes = JSON.parse(localStorage.getItem("notes") || "[]");
+let isUpdate = false,
+  updateId;
 
 addBox.addEventListener("click", () => {
+  titleTag.focus();
   popupBox.classList.add("show");
 });
 
 closeIcon.addEventListener("click", () => {
   //* Make these inputs blank when user close popup
+  isUpdate = false;
   titleTag.value = "";
   descTag.value = "";
+  addBtn.innerText = "Add Note";
+  popupTitle.innerText = "Add a new Note";
   popupBox.classList.remove("show");
 });
 
@@ -52,7 +58,7 @@ function showNotes() {
             <div class="settings">
                 <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
                 <ul class="menu">
-                    <li><i class="uil uil-pen"></i> Edite</li>
+                    <li onclick="updateNote(${index}, '${note.title}', '${note.description}' )"><i class="uil uil-pen"></i> Edite</li>
 
                     <li onclick="deleteNote(${index})"><i class="uil uil-trash"></i> Delete</li>
                 </ul>
@@ -76,12 +82,23 @@ function showMenu(elem) {
 }
 
 function deleteNote(noteId) {
-  console.log(noteId);
+  // console.log(noteId);
   notes.splice(noteId, 1); // remove selected note from array/tasks
 
   localStorage.setItem("notes", JSON.stringify(notes));
 
   showNotes();
+}
+
+function updateNote(noteId, title, description) {
+  isUpdate = true;
+  updateId = noteId;
+  addBox.click();
+  titleTag.value = title;
+  descTag.value = description;
+  addBtn.innerText = "Update Note";
+  popupTitle.innerText = "Update a Note";
+  // console.log(noteId, title, description);
 }
 
 addBtn.addEventListener("click", (e) => {
@@ -101,7 +118,12 @@ addBtn.addEventListener("click", (e) => {
       date: `${month} ${day}, ${year}`,
     };
 
-    notes.push(noteInfo); // adding new note to notes
+    if (!isUpdate) {
+      notes.push(noteInfo); // adding new note to notes
+    } else {
+      isUpdate = false;
+      notes[updateId] = noteInfo; // update specified note
+    }
     localStorage.setItem("notes", JSON.stringify(notes));
 
     closeIcon.click();
